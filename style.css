@@ -154,11 +154,21 @@ html.is-animating .transition-fade {
 }
 
 
-.exit-button {
+.logo-left {
   position: relative;
-  float: right;
+  float: left;
   height: 0;
+  z-index: 10;
+  padding: 5px;
+
 }
+.logo-left img{
+  height: 100px;
+  top: 0;
+
+}
+
+
 
 #loader {
   background-image: url("Gambar/motif.jpg");
