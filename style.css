@@ -14,6 +14,7 @@ body {
 }
 
 .swiper {
+ z-index: 20px;
   width: 100%;
   height: 100%;
 }
@@ -48,8 +49,10 @@ body {
 
 
 body {
-  background-image: url("Gambar/motif.jpg");
+  background-image: url("Gambar/motif3.jpg");
   color: #8d5f14;
+  background-size: cover;
+  background-position: center;
 }
 
 .swiper {
@@ -60,15 +63,46 @@ body {
 }
 
 .swiper-slide {
-  background-image: url("Gambar/motif.jpg");
+  background: transparent;
+ 
+}
+
+.thumb-slide{
+  background-color: #e4ebe1;
   background-size: cover;
   background-position: center;
+  border-radius: 15px;
+  border: 5px solid #ca881d;
+  box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+}  
+
+
+.pic-wrpper{
+  margin-top: -50px;
+  height: 450px;
+  width: 80%;
+  background-color: #e4ebe1;
+  background-size: cover;
+  background-position: center;
+  border-radius: 25px;
+  border: 5px solid #ca881d;
+  color: #ca881d;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;  
+}
+
+.pic-wrpper img{
+  height: 300px;
+}
+
+.pic-wrpper h1{
+  padding: 10px;
+  font-weight: bolder;
 }
 
 .mySwiper2 {
-  background-color: #8d5f14;
   height: 80%;
   width: 100%;
+
 }
 
 .mySwiper {
@@ -80,7 +114,7 @@ body {
 .mySwiper .swiper-slide {
   width: 25%;
   height: 100%;
-  opacity: 0.4;
+  opacity: 1;
 }
 
 .mySwiper .swiper-slide-thumb-active {
@@ -95,7 +129,7 @@ body {
 }
 
 html.is-animating .transition-fade {
-  opacity: 0;
+  opacity: 1;
 }
 
 .detail-field {
@@ -159,19 +193,21 @@ html.is-animating .transition-fade {
   float: left;
   height: 0;
   z-index: 10;
-  padding: 5px;
+
 
 }
 .logo-left img{
-  height: 100px;
+  height: 70px;
   top: 0;
+  filter: drop-shadow(10px 5px 10px #000000);
+  padding: 10px;
 
 }
 
 
 
 #loader {
-  background-image: url("Gambar/motif.jpg");
+  background-image: url("Gambar/motif3.jpg");
   border: 12px solid #FAEAB1;
   border-radius: 50%;
   border-top: 12px solid #ca881d;
@@ -223,7 +259,7 @@ footer {
   height: 100%;
   background: #8d5f14;
   border-radius: 10px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   color: white;
   display: flex;
   justify-content: center;
